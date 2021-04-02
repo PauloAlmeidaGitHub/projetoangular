@@ -26,7 +26,16 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/vendor/jquery/jquery.min.js",
+              "src/assets/vendor/bootstrap/js/bootstrap.bundle.min.js",
+              "src/assets/vendor/jquery-easing/jquery.easing.min.js",
+              "src/assets/js/sb-admin-2.min.js",
+              "src/assets/js/highcharts.js",
+              "src/assets/js/highcharts-3d.js",
+              "src/assets/js/exporting.js",
+              "src/assets/js/export-data.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -116,6 +125,10 @@
               "devServerTarget": "appClientes:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
